@@ -1,12 +1,11 @@
 import React from 'react'
 import { urlFor } from '../sanity'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 const ProjectCard = ({data : {slug, mainImage, projectType}}) => {
   return (
-    <Link href="/">
+    <Link href={`/project/${slug.current}`}>
       <div 
         className='relative h-[60vh] w-full rounded-2xl shadow-lg cursor-pointer'
       >
