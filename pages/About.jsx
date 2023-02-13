@@ -5,7 +5,7 @@ import { fetchClients } from '../utils/fetchClients'
 import { fetchSocials } from '../utils/fetchSocials'
 
 const About = ({getKnow, clients, socials}) => {
-  console.log(getKnow)
+
   return (
     <div>
       <Profile data={getKnow} />
@@ -19,9 +19,14 @@ const About = ({getKnow, clients, socials}) => {
 export default About
 
 export const getStaticProps = async () => {
-  const getKnow = await fetchGetToKnow()
-  const clients = await fetchClients()
-  const socials = await fetchSocials()
+  const getKnowQuery = `*[_type == "getKnow"]`
+  const getKnow = await sanityClient.fetch(getKnowQuery)
+
+  const clientsQuery = `*[_type == "clients"]` 
+  const clients = await sanityClient.fetch(clientsQuery)
+
+  const socialsQuery = `*[_type == "socials"]`
+  const socials = await sanityClient.fetch(socialsQuery)
 
   return {
     props: {
