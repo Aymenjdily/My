@@ -66,7 +66,9 @@ export const getStaticProps = async ({params}) => {
 }
 
 export const getStaticPaths = async() => {
-    const projects = await fetchProjects();
+    const projectQuery = `*[_type == "projects"]`
+    const projects = await sanityClient.fetch(projectQuery);
+
     const paths  = projects.map((project) =>({
        params : {
          slug : project.slug.current

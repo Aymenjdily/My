@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Contact, Feedback, GetToKnow, Intro, Projects } from '../components'
+import { sanityClient } from '../sanity'
 import { fetchClients } from '../utils/fetchClients'
 import { fetchGetToKnow } from '../utils/fetchGetToKnow'
-import { fetchProjects } from '../utils/fetchProjects'
 import { fetchSocials } from '../utils/fetchSocials'
 
 export default function Home({projects, getKnow, clients, socials}) {
@@ -20,10 +20,17 @@ export default function Home({projects, getKnow, clients, socials}) {
 }
 
 export const getStaticProps = async () => {
-  const projects = await fetchProjects()  
-  const getKnow = await fetchGetToKnow()
-  const clients = await fetchClients()
-  const socials = await fetchSocials()
+  const projectQuery = `*[_type == "projects"]`
+  const projects = await sanityClient.fetch(projectQuery) 
+
+  const getKnowQuery = `*[_type == "getKnow"]`
+  const getKnow = await sanityClient.fetch(getKnowQuery)
+
+  const clientsQuery = `*[_type == "clients"]` 
+  const clients = await sanityClient.fetch(clientsQuery)
+
+  const socialsQuery = `*[_type == "socials"]`
+  const socials = await sanityClient.fetch(socialsQuery)
 
   return {
     props: {
