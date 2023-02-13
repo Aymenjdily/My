@@ -1,10 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import { Contact, Feedback, GetToKnow, Intro, Projects } from '../components'
 import { sanityClient } from '../sanity'
-import { fetchClients } from '../utils/fetchClients'
-import { fetchGetToKnow } from '../utils/fetchGetToKnow'
-import { fetchSocials } from '../utils/fetchSocials'
+
 
 export default function Home({projects, getKnow, clients, socials}) {
   console.log(projects)

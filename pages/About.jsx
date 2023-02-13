@@ -1,8 +1,6 @@
 import React from 'react'
 import { Career, Contact, Feedback, Profile } from '../components'
-import { fetchGetToKnow } from '../utils/fetchGetToKnow'
-import { fetchClients } from '../utils/fetchClients'
-import { fetchSocials } from '../utils/fetchSocials'
+import { sanityClient } from '../sanity'
 
 const About = ({getKnow, clients, socials}) => {
 
