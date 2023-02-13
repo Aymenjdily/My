@@ -12,7 +12,7 @@ const ProjectCard = ({data : {slug, mainImage, projectType}}) => {
           <Image src={urlFor(mainImage).url()} fill alt="project-Image" className='object-cover rounded-2xl object-top' />
           <div className={`absolute w-full h-full ${projectType === "Landing Page" ? "bg-gradient-to-t from-secondary/20 to-white/20" : "bg-lightBlue/20"}`}>
               <div className='flex items-end justify-start h-full'>
-                  <h1 className=' text-white text-2xl m-6 py-2 px-4 capitalize font-bold bg-lightBlue rounded-xl'>
+                  <h1 className={`text-white text-2xl m-6 py-2 px-4 capitalize font-bold ${projectType === "Landing Page" ? "bg-secondary" : "bg-lightBlue"} rounded-xl`}>
                       {projectType}
                   </h1>
               </div>

@@ -13,7 +13,8 @@ const Contact = ({data}) => {
                     aymenjdily@gmail.com
                 </p>
             </div>
-            <div className='flex flex-1 gap-5 items-center justify-center'>
+            <div
+                className='flex flex-1 gap-5 items-center justify-center'>
                 {
                     data.map((social, index) => (
                         <SocialIcon 

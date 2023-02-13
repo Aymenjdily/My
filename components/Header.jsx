@@ -22,7 +22,7 @@ const Header = () => {
                 initial={{ y: -100 }}
                 whileInView={{ y:0}}
                 transition={{ duration: 0.5 }}
-                className="flex order-first text-center lg:order-none lg:w-1/5 title-font font-extrabold uppercase text-5xl items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
+                className="flex order-first text-center lg:order-none lg:w-1/5 title-font font-extrabold uppercase text-5xl items-center text-black lg:items-center lg:justify-center mb-4 md:mb-0"
             >
                 <Link href="/">
                     aymen

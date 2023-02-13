@@ -5,11 +5,13 @@ import Link from 'next/link'
 
 const GetToKnow = ({data}) => {
   return (
-    <section className="text-gray-600 body-font">
+    <section
+        className="text-gray-600 body-font">
         {
             data.map((card, index) => (
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" key={index}>
-                    <div 
+                    <div
+                        
                         className="w-full h-[60vh] mb-10 md:mb-0 relative"
                     >
                         <div className='absolute z-[1] w-[100%] h-[100%] rounded-full blue__gradient'/>

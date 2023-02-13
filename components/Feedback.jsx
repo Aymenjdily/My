@@ -26,7 +26,9 @@ const Feedback = ({data}) => {
                     >
                         <div className="flex md:flex-row md:gap-0 gap-5 flex-col items-center">
                             <div className='flex flex-col'>
-                                <div className="relative h-52 w-52">
+                                <div
+                                    className="relative h-52 w-52"
+                                >
                                     <Image layout="fill" alt={testimonial.name} src={urlFor(testimonial.imageClient).url()} className="object-cover shadow-lg object-center rounded-full" />
                                 </div>
 

@@ -4,11 +4,15 @@ import { urlFor } from '../sanity'
 
 const Profile = ({data}) => {
   return (
-    <section className="text-gray-600 body-font">
+    <section 
+        className="text-gray-600 body-font"
+    >
         {
             data.map((profile, index) => (
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" key={index}>
-                    <div className="md:w-96 w-full h-96 mb-10 md:mb-0 relative">
+                    <div
+                        className="md:w-96 w-full h-96 mb-10 md:mb-0 relative"
+                    >
                         <div className='absolute z-[0] w-[100%] h-[50%] top-0 orange__gradient'/>
                         <div className='absolute z-[1] w-[100%] h-[100%] rounded-full bottom-40 white__gradient'/>
                         <div className='absolute z-[0] w-[100%] h-[100%] right-20 bottom-20 blue__gradient'/>

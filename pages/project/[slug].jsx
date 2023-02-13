@@ -2,7 +2,7 @@ import React from 'react'
 import { sanityClient } from '../../sanity'
 import { urlFor } from '../../sanity'
 import Image from 'next/image'
-import { fetchProjects } from '../../utils/fetchProjects'
+import { SocialIcon } from 'react-social-icons';
 
 const ProjectDetails = ({project}) => {
   return (
@@ -28,9 +28,14 @@ const ProjectDetails = ({project}) => {
                 <h2 className="md:text-4xl text-2xl mb-5 font-bold capitalize text-black">
                     project overview
                 </h2>
-                <p>
+                <p className='mb-5'>
                     {project.projectDescription}
                 </p>
+                <div className={`${project.url === 'https://none.com' ? "hidden" : "flex"}`}>
+                    <SocialIcon
+                        url={project.url}
+                    />
+                </div>
             </div>
             <div className="md:w-3/5 md:pl-6">
                 <h2 className="md:text-3xl text-xl mb-5 font-bold capitalize text-black">
