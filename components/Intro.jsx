@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 const Intro = () => {
@@ -9,10 +8,7 @@ const Intro = () => {
             <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'/>
             <div className='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient'/>
             <div className='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient'/>
-            <motion.div 
-                initial={{ y:200 }}
-                animate={{ y:0}}
-                transition={{ duration: 0.8 }}
+            <div 
                 className="lg:flex-grow lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start z-[2] overflow-hidden">
                 <h1 className="title-font lg:text-6xl md:text-5xl text-3xl mb-4 font-bold text-gray-900">A FullStack <span className='bg-secondary px-2'>Developer</span> passionate 
                     <br />about creating <span className='underline decoration-lightBlue'>High-Performance</span> 
@@ -28,7 +24,7 @@ const Intro = () => {
                         </button>
                     </Link>
                 </div>
-            </motion.div>
+            </div>
         </div>    
     </section>
   )
