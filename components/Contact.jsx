@@ -14,7 +14,7 @@ const Contact = ({data}) => {
                 </p>
             </div>
             <div
-                className='flex flex-1 gap-5 items-center justify-center'>
+                className='flex flex-wrap flex-1 gap-5 items-center justify-center'>
                 {
                     data.map((social, index) => (
                         <SocialIcon 
