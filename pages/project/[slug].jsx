@@ -8,7 +8,7 @@ const ProjectDetails = ({project}) => {
   return (
     <section Name="text-gray-600 body-font">
         <div className='container mx-auto px-5 pt-24'>
-            <h1 className='md:text-6xl text-4xl capitalize text-black font-bold mb-5'>
+            <h1 className={`md:text-6xl text-4xl capitalize underline-offset-8 underline ${project.projectType === "Landing Page" ? "decoration-secondary" : "decoration-primary"} text-black font-bold mb-5`}>
                 {project.projectName}
             </h1>
             <p className='text-xl'>

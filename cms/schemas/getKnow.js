@@ -42,6 +42,14 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'careerImage',
+      title: 'CareerImage',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
       name: 'overview',
       title: 'Overview',
       type: 'text',

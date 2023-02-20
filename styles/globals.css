@@ -22,8 +22,8 @@ a {
 }
 
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #6497b1 100%);
-  filter: blur(123px);
+  background: linear-gradient(90deg, #6497b1 70%, #FD7F20 30%);
+  filter: blur(140px);
 }
 
 .orange__gradient {
@@ -56,4 +56,14 @@ a {
   background: linear-gradient(180deg, #6497b1,#FD7F20 );
   border-radius: 50px;
   filter: blur(750px);
+}
+
+.bg-button{
+  background: linear-gradient(97deg, rgba(0,91,150,1) 35%, rgba(253,127,32,1) 90%);
+  filter: blur(40px);
+}
+
+::selection {
+  color: #fff;
+  background: #005b96;
 }

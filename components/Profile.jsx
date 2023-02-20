@@ -13,8 +13,7 @@ const Profile = ({data}) => {
                     <div
                         className="md:w-96 w-full h-96 mb-10 md:mb-0 relative"
                     >
-                        <div className='absolute z-[0] w-[100%] h-[50%] top-0 orange__gradient'/>
-                        <div className='absolute z-[1] w-[100%] h-[100%] rounded-full bottom-40 white__gradient'/>
+                        <div className='absolute z-[0] w-[100%] h-[50%] top-0 blue__gradient'/>
                         <div className='absolute z-[0] w-[100%] h-[100%] right-20 bottom-20 blue__gradient'/>
                         <Image fill className="object-cover object-center rounded-full z-[2] shadow-lg" alt="hero" src={urlFor(profile.profileImage).url()} />
                     </div>
@@ -25,6 +24,9 @@ const Profile = ({data}) => {
                         <p className="text-xl leading-relaxed">
                             {profile.overview}
                         </p>
+                        <div className='relative w-60 h-32'>
+                            <Image fill src={urlFor(profile.careerImage).url()} alt="mern-stack" className='object-contain' />
+                        </div>
                     </div>
                 </div>
             ))

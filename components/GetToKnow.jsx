@@ -11,11 +11,9 @@ const GetToKnow = ({data}) => {
             data.map((card, index) => (
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" key={index}>
                     <div
-                        
                         className="w-full h-[60vh] mb-10 md:mb-0 relative"
                     >
-                        <div className='absolute z-[1] w-[100%] h-[100%] rounded-full blue__gradient'/>
-                        <div className='absolute z-[0] w-[100%] h-[100%] right-20 bottom-20 blue__gradient'/>
+                        <div className='absolute z-[0] w-[100%] h-[100%] rounded-full blue__gradient'/>
                         <Image className="object-cover z-[2] object-center rounded-xl border-black border-2 shadow-lg" alt="hero" fill src={urlFor(card.mainImage).url()} />
                     </div>
                     <div
@@ -35,7 +33,7 @@ const GetToKnow = ({data}) => {
                         </p>
                         <div className="flex justify-center">
                             <Link href="/About">
-                                <button className="inline-flex items-center capitalize bg-gradient-to-r from-lightBlue via-lightBlue to-primary text-white border-0 py-3 px-10 focus:outline-none hover:bg-gray-200 rounded-lg text-xl mt-4 md:mt-0 shadow-lg">
+                                <button className="inline-flex items-center capitalize bg-primary text-white border-0 py-3 px-10 focus:outline-none  hover:bg-secondary rounded-lg text-lg duration-300 mt-4 md:mt-0 shadow-lg">
                                     get to know me
                                 </button>
                             </Link>
