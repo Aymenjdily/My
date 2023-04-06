@@ -1,4 +1,4 @@
-import { Contact, Feedback, GetToKnow, Intro, Projects } from '../components'
+import { Blog, Contact, Feedback, GetToKnow, Intro, Projects } from '../components'
 import { sanityClient } from '../sanity'
 
 
@@ -7,8 +7,9 @@ export default function Home({projects, getKnow, clients, socials}) {
   return (
     <div className=''>
       <Intro />
-      <Projects data={projects} />
       <GetToKnow data={getKnow} />
+      <Projects data={projects} />
+      {/* <Blog /> */}
       <Feedback data={clients} />
       <Contact data={socials} />
     </div>

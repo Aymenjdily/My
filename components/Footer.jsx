@@ -41,6 +41,11 @@ const Footer = () => {
                         contact   
                     </Link>
                 </span>
+                <span className="mr-5 capitalize font-semibold text-lg hover:text-secondary duration-200">
+                    <Link href="/blog">
+                        blog
+                    </Link>
+                </span>
             </div>
         </div>
     </footer>

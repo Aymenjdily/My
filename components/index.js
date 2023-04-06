@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Profile from "./Profile";
 import Career from "./Career";
+import Blog from "./Blog";
 
 export {
     Header,
@@ -17,5 +18,6 @@ export {
     Contact,
     Footer,
     Profile,
-    Career
+    Career,
+    Blog
 }

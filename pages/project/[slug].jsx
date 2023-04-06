@@ -16,11 +16,11 @@ const ProjectDetails = ({project}) => {
             </p>
         </div>
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center gap-10 justify-center">
-            <div className="relative h-[100vh] lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                <Image fill className="object-cover object-center rounded-xl shadow-lg" alt="hero" src={urlFor(project.mainImage).url()} />
+            <div className="relative h-[100vh] w-full mb-10 md:mb-0">
+                <Image fill className="object-contain object-center rounded-xl shadow-lg" alt="hero" src={urlFor(project.mainImage).url()} />
             </div>
-            <div className="relative h-[100vh] lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                <Image fill className="object-cover object-center rounded-xl shadow-lg" alt="hero" src={urlFor(project.secondImage).url()} />
+            <div className="relative h-[100vh] w-full mb-10 md:mb-0">
+                <Image fill className="object-contain object-center rounded-xl shadow-lg" alt="hero" src={urlFor(project.secondImage).url()} />
             </div>
         </div>
         <div className="container px-5 py-24 mx-auto flex flex-wrap">

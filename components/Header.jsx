@@ -17,6 +17,11 @@ const Header = () => {
                         contact   
                     </Link>
                 </span>
+                <span className="mr-5 capitalize font-semibold text-lg hover:text-secondary scroll-smooth duration-200">
+                    <Link href="/blog">
+                        blog   
+                    </Link>
+                </span>
             </nav>
             <motion.span 
                 initial={{ y: -100 }}

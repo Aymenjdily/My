@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Intro = () => {
   return (
-    <section className="md:h-[70vh] h-[80vh] flex items-center justify-center">
+    <section className="flex items-center justify-center">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center relative">
             {/* <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'/> */}
             <div className='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient'/>
