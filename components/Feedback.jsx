@@ -5,52 +5,56 @@ import { urlFor } from '../sanity';
 
 const Feedback = ({data}) => {
   return (
-    <section className='py-24 px-5 container flex flex-col md:items-start items-center mx-auto w-full overflow-hidden'>
-        <h1 className='font-bold my-5 md:text-5xl text-3xl capitalize mb-12'>
-            on working with me
-        </h1>
-        <Splide 
-            options={{
-                perPage : 1,
-                pagination : false,
-                drag : "free",
-                arrows : false,
-            }}
-            className="w-full"
-        >
-            {
-                data.map((testimonial, index) => (
-                    <SplideSlide
-                        key={index}
-                        className="w-full"
-                    >
-                        <div className="flex md:flex-row md:gap-0 gap-5 flex-col items-center">
-                            <div className='flex flex-col'>
-                                <div
-                                    className="relative h-52 w-52"
-                                >
-                                    <Image layout="fill" alt={testimonial.name} src={urlFor(testimonial.imageClient).url()} className="object-cover shadow-lg object-center rounded-full" />
-                                </div>
+    <section className='py-24 px-8 container flex flex-col md:items-start items-center mx-auto w-full overflow-hidden'>
+        <div>
+            <h1 className='font-semibold text-3xl capitalize'>
+                My experience
+            </h1>
+            <p className='mt-3 text-gray-400 md:w-[900px]'>
+                As a junior web developer, I have been working with React.js and Vue.js for front-end development, gaining hands-on experience in creating interactive and responsive user interfaces. I have a strong attention to detail and a passion for creating visually appealing websites that deliver an excellent user experience. On the back-end, I have been working with Express.js and Laravel, learning how to build robust server-side applications and RESTful APIs. Through my projects, I have developed a solid understanding of the full-stack web development process and continue to expand my skills to deliver high-quality and efficient web solutions.
+            </p>
+        </div>
 
-                                <div className='flex flex-col text-center mt-8'>
-                                    <h2 className='font-bold text-xl'>
-                                        {testimonial.name}
-                                    </h2>
-                                    <p className='text-gray-500'>
-                                        {testimonial.profession}
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="lg:flex-grow lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                                <q className="leading-relaxed text-xl">
-                                    {testimonial.feedback}.
-                                </q>
-                            </div>
-                        </div>
-                    </SplideSlide>
-                ))
-            }
-        </Splide>
+        <div className='py-6 grid sm:grid-cols-2 gap-8 lg:grid-cols-4 mt-10 w-full'>
+            <div>
+                <h1 className='text-lg'>NowEdge</h1>
+                <div className='mt-4 text-gray-400'>
+                    <p>Frontend Developer</p>
+                    <p className='text-sm mt-2'>
+                        Aug 2022 - Jan 2023
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h1 className='text-lg'>Freelancer</h1>
+                <div className='mt-4 text-gray-400'>
+                    <p>Frontend Developer</p>
+                    <p className='text-sm mt-2'>
+                        Aug 2022 - Dec 2022
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h1 className='text-lg'>Freelancer</h1>
+                <div className='mt-4 text-gray-400'>
+                    <p>Landing | Multi Pages Services</p>
+                    <p className='text-sm mt-2'>
+                        May 2022 - Present
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h1 className='text-lg'>Devaxy</h1>
+                <div className='mt-4 text-gray-400'>
+                    <p>
+                        Intership
+                    </p>
+                    <p className='text-sm mt-2'>
+                        Apr 2022 - May 2022
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
   )
 }

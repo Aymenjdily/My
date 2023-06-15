@@ -5,42 +5,33 @@ import { motion } from 'framer-motion'
 const Header = () => {
   return (
     <header className="z-[5] overflow-hidden">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <div className=" flex flex-wrap p-5 flex-col md:flex-row items-center">
             <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto z-[5]">
-                <span className="mr-5 capitalize font-semibold text-lg hover:text-secondary duration-200">
+                <span className="mr-5 capitalize text-md hover:text-secondary duration-200">
                     <Link href="/About">
                         about   
                     </Link>
                 </span>
-                <span className="mr-5 capitalize font-semibold text-lg hover:text-primary scroll-smooth duration-200">
+                <span className="mr-5 capitalize text-gray-400 text-md hover:text-primary scroll-smooth duration-200">
                     <Link href="#contact">
                         contact   
                     </Link>
                 </span>
-                <span className="mr-5 capitalize font-semibold text-lg hover:text-secondary scroll-smooth duration-200">
-                    <Link href="/blog">
-                        blog   
-                    </Link>
-                </span>
             </nav>
-            <motion.span 
-                initial={{ y: -100 }}
-                whileInView={{ y:0}}
-                transition={{ duration: 0.5 }}
-                className="flex order-first text-center lg:order-none lg:w-1/5 title-font font-extrabold uppercase text-5xl items-center text-black lg:items-center lg:justify-center mb-4 md:mb-0"
+            <span 
+                className="flex order-first text-center lg:order-none lg:w-1/5 title-font font-extrabold uppercase text-4xl items-center text-black lg:items-center lg:justify-center underline mb-4 md:mb-0"
             >
                 <Link href="/">
                     aymen
-                    <br/>
-                    jdily
                 </Link>
-            </motion.span>
+            </span>
+            
             <div className="lg:w-2/5 inline-flex lg:justify-end z-[5]">
-                <Link href="/#projects">
-                    <button className="inline-flex items-center capitalize bg-primary text-white border-0 py-3 px-10 focus:outline-none  hover:bg-secondary rounded-lg text-lg duration-300 mt-4 md:mt-0 shadow-lg">
-                        view work
-                    </button>
-                </Link>
+                <span className="mr-5 capitalize font-semibold text-md hover:text-secondary scroll-smooth duration-200">
+                    <Link href="/">
+                        Home   
+                    </Link>
+                </span>
             </div>
         </div>
     </header>

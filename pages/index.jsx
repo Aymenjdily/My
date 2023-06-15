@@ -7,7 +7,7 @@ export default function Home({projects, getKnow, clients, socials}) {
   return (
     <div className=''>
       <Intro />
-      <GetToKnow data={getKnow} />
+      {/* <GetToKnow data={getKnow} /> */}
       <Projects data={projects} />
       {/* <Blog /> */}
       <Feedback data={clients} />

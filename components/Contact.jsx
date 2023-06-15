@@ -3,27 +3,43 @@ import { SocialIcon } from 'react-social-icons';
 
 const Contact = ({data}) => {
   return (
-    <section className='container py-24 mx-auto px-5' id='contact'>
-        <div className='flex md:flex-row flex-col md:text-start text-center p-12 border-4 border-black rounded-2xl shadow-lg'>
-            <div className='flex-1 md:mb-0 mb-8'>
-                <h1 className='md:text-5xl text-3xl md:mb-8 mb-4 font-bold'>
-                    Want to get in touch ?
+    <section className='bg-gray-200 py-24 px-5' id='contact'>
+        <div className='container mx-auto px-8'>
+            <div>
+                <h1 className='font-semibold text-3xl'>
+                    Want to get in touch?
+                    <br/>
+                    Drop me a line!
                 </h1>
-                <p className='md:text-2xl'>
-                    aymenjdily@gmail.com
+                <p className='mt-2 text-gray-400'>
+                    message me, i will answer as fast as possible.
                 </p>
             </div>
-            <div
-                className='flex flex-wrap flex-1 gap-5 items-center justify-center'>
-                {
-                    data.map((social, index) => (
-                        <SocialIcon 
-                            key={index}
-                            url={social.url}
-                        />
-                    ))
-                }
-            </div>
+            <form className='mt-10' action="">
+                <div className='flex md:flex-row flex-col gap-10'>
+                    <div className='flex flex-col gap-3 md:w-[400px]'>
+                        <label htmlFor="name" className='uppercase text-sm font-sans'>
+                            full name
+                        </label>
+                        <input type="text" disabled id='name' className='p-2 border pl-4 outline-none border-gray-300 placeholder:text-gray-300 ' placeholder='Enter your name' />
+                    </div>
+                    <div className='flex flex-col gap-3 md:w-[400px]'>
+                        <label htmlFor="email" className='uppercase text-sm font-sans'>
+                            email
+                        </label>
+                        <input type="email" disabled id='email' className='p-2 pl-4 border outline-none border-gray-300 placeholder:text-gray-300' placeholder='Enter your email' />
+                    </div>
+                </div>
+                <div className='flex gap-3 flex-col lg:w-[840px] mt-7'>
+                    <label htmlFor="email" className='uppercase text-sm font-sans'>
+                        message
+                    </label>
+                    <textarea disabled type="email" id='email' className='p-2 pl-4 h-64 border outline-none border-gray-300 placeholder:text-gray-300 ' placeholder='Enter your email' />
+                </div>
+                <button disabled className='bg-black text-white px-8 py-3 uppercase tracking-wider text-sm mt-10'>
+                    Submit
+                </button>
+            </form>
         </div>
     </section>
   )
