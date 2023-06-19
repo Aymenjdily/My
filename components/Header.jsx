@@ -7,12 +7,12 @@ const Header = () => {
     <header className="z-[5] overflow-hidden">
         <div className=" flex flex-wrap p-5 flex-col md:flex-row items-center">
             <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto z-[5]">
-                <span className="mr-5 capitalize text-md hover:text-secondary duration-200">
+                {/* <span className="mr-5 capitalize text-md hover:text-secondary duration-200">
                     <Link href="/About">
                         about   
                     </Link>
-                </span>
-                <span className="mr-5 capitalize text-gray-400 text-md hover:text-primary scroll-smooth duration-200">
+                </span> */}
+                <span className="mr-5 capitalize text-md hover:text-primary scroll-smooth duration-200">
                     <Link href="#contact">
                         contact   
                     </Link>

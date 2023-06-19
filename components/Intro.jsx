@@ -12,16 +12,16 @@ const Intro = () => {
             <div 
                 className="lg:flex-grow md:px-24 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left py-6 mb-16 md:mb-0 items-start z-[2] overflow-hidden"
             >
-                <h1 className='text-xl mb-1 font-semibold'>
+                <h1 className='text-xl mb-1 font-bold'>
                     Aymen
                 </h1>
-                <span className='mb-5 text-gray-400'>
+                <span className='mb-5 text-gray-400 font-semibold'>
                     Web Developer
                 </span>
-                <p className='md:text-5xl text-4xl font-normal'>
-                    Hey There ! I'm a Full Stack Developer Passionate
+                <p className='md:text-5xl text-4xl font-bold'>
+                    Hey There ! I'm a Wordpress Developer Passionate
                     About Creating High-Performance
-                    Projects.
+                    Websites.
                 </p>
             </div>
         </div>    

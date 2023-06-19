@@ -6,7 +6,7 @@ const Contact = ({data}) => {
     <section className='bg-gray-200 py-24 px-5' id='contact'>
         <div className='container mx-auto px-8'>
             <div>
-                <h1 className='font-semibold text-3xl'>
+                <h1 className='font-bold text-3xl'>
                     Want to get in touch?
                     <br/>
                     Drop me a line!

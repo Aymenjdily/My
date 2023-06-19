@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 
 const Projects = ({data}) => {
   return (
-    <div className='overflow-hidden px-8 md:py-24' id='projects'>
+    <div className='overflow-hidden px-8 pb-12 md:py-24' id='projects'>
         {/* <div className='px-4 mb-20'>
           <h1 className='text-5xl mb-2 capitalize font-bold'>
             some of my projects <span className='text-primary'>( {data.length} )</span> 
