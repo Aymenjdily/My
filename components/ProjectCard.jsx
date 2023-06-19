@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const ProjectCard = ({data : {slug, mainImage, projectName, url}, index}) => {
   return (
-    <Link href={`${url}`}>
+    <Link href="#">
       <div 
         className={`relative h-[60vh] w-full shadow-lg cursor-pointer`}
       >
