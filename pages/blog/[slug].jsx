@@ -68,7 +68,7 @@ export const getStaticPaths = async() => {
     const BlogsQuery = `*[_type == "blogs"]`
     const blogs = await sanityClient.fetch(BlogsQuery);
 
-    const paths  = blogs.map((blog) =>({
+    const paths  = blogs && blogs.map((blog) => ({
        params : {
          slug : blog.slug.current
        }
