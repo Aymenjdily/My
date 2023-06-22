@@ -9,7 +9,7 @@ export default function Home({projects, getKnow, clients, socials}) {
       <Intro />
       {/* <GetToKnow data={getKnow} /> */}
       <Projects data={projects} />
-      <Blog />
+      {/* <Blog /> */}
       <Feedback data={clients} />
       <Contact data={socials} />
     </div>

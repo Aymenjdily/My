@@ -19,9 +19,9 @@ const Intro = () => {
                     Web Developer
                 </span>
                 <p className='md:text-5xl text-4xl font-bold'>
-                    Hey There ! I'm a Wordpress Developer Passionate
+                    Hey There ! I'm a Web Developer Developer Passionate
                     About Creating High-Performance
-                    Websites.
+                    Projects.
                 </p>
             </div>
         </div>    

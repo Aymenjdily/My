@@ -17,6 +17,11 @@ const Header = () => {
                         contact   
                     </Link>
                 </span>
+                <span className="mr-5 capitalize text-md hover:text-secondary scroll-smooth duration-200">
+                    <Link href="/Blog">
+                        Blog  
+                    </Link>
+                </span>
             </nav>
             <span 
                 className="flex order-first text-center lg:order-none lg:w-1/5 title-font font-extrabold uppercase text-4xl items-center text-black lg:items-center lg:justify-center underline mb-4 md:mb-0"
