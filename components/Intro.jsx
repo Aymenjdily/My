@@ -16,10 +16,10 @@ const Intro = () => {
                     Aymen
                 </h1>
                 <span className='mb-5 text-gray-400 font-semibold'>
-                    Web Developer
+                    Frontend Web Developer
                 </span>
                 <p className='md:text-5xl text-4xl font-bold'>
-                    Hey There ! I'm a Web Developer Developer Passionate
+                    Hey There ! I'm a Frontend Web Developer Passionate
                     About Creating High-Performance
                     Projects.
                 </p>

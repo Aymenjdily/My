@@ -27,7 +27,7 @@ const Footer = () => {
                 </Link>
             </motion.span>
             <p className="text-sm md:text-start text-center text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-400 sm:py-2 sm:mt-0 mt-4">&copy; {year} All rights reserved —
-            <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@aymenjdily | Version 1.3</a>
+            <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@aymenjdily | Version 1.5</a>
             </p>
             <div className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                 <span className="mr-5 capitalize font-semibold text-lg hover:text-secondary duration-200">
