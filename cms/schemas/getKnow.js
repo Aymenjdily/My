@@ -65,7 +65,11 @@ export default defineType({
       type: 'array',
       of : [
         {
-            type : "string"
+            type : "object",
+            fields :[
+              {type: "string", name: "title"},
+              {type: "image", name: "image"}
+            ]
         }
       ]
     }),
