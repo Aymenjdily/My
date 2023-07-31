@@ -17,11 +17,20 @@ const Feedback = ({data}) => {
 
         <div className='py-6 grid sm:grid-cols-2 gap-8 lg:grid-cols-4 mt-10 w-full'>
             <div>
-                <h1 className='text-lg'>Freelancer</h1>
+                <h1 className='text-lg'>Korair_</h1>
                 <div className='mt-4 text-gray-400'>
-                    <p>Full stack Developer</p>
+                    <p>Internship Full stack Developer</p>
                     <p className='text-sm mt-2'>
-                        Jun 2023 - Present
+                        jul 2023 - Present
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h1 className='text-lg'>SGMG</h1>
+                <div className='mt-4 text-gray-400'>
+                    <p>Internship Full stack Developer</p>
+                    <p className='text-sm mt-2'>
+                        jan 2023 - June 2023
                     </p>
                 </div>
             </div>
@@ -30,16 +39,7 @@ const Feedback = ({data}) => {
                 <div className='mt-4 text-gray-400'>
                     <p>Frontend Developer</p>
                     <p className='text-sm mt-2'>
-                        Aug 2022 - Jan 2023
-                    </p>
-                </div>
-            </div>
-            <div>
-                <h1 className='text-lg'>Freelancer</h1>
-                <div className='mt-4 text-gray-400'>
-                    <p>Landing | Multi Pages Services</p>
-                    <p className='text-sm mt-2'>
-                        May 2022 - Present
+                        Aug 2022 - Dec 2022
                     </p>
                 </div>
             </div>
@@ -47,7 +47,7 @@ const Feedback = ({data}) => {
                 <h1 className='text-lg'>Devaxy</h1>
                 <div className='mt-4 text-gray-400'>
                     <p>
-                        Intership
+                        Internship Frontend Developer
                     </p>
                     <p className='text-sm mt-2'>
                         Apr 2022 - May 2022
