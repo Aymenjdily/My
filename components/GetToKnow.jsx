@@ -1,43 +1,37 @@
 import React from 'react'
 import Image from 'next/image'
 import { urlFor } from '../sanity'
-import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const GetToKnow = ({data}) => {
   return (
-    <section
-        className="text-gray-600 body-font">
+    <section className="container mx-auto">
         {
             data.map((card, index) => (
-                <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" key={index}>
-                    <div
-                        className="w-full h-[60vh] mb-10 md:mb-0 relative"
+                <div className="flex px-5 lg:flex-row flex-col lg:gap-[100px] items-center" key={index}>
+                    <motion.div
+                        initial={{ opacity:0, scale:0.8 }}
+                        whileInView={{ opacity:1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                        className="flex flex-1 flex-col items-start"
                     >
-                        <div className='absolute z-[0] w-[100%] h-[100%] rounded-full blue__gradient'/>
-                        <Image className="object-cover z-[2] object-center rounded-xl border-black border-2 shadow-lg" alt="hero" fill src={urlFor(card.mainImage).url()} />
-                    </div>
-                    <div
-                        className="w-full lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center relative z-[2] overflow-hidden"
-                    >
-                        <h1 className="title-font md:text-5xl sm:text-4xl text-3xl mb-4 capitalize font-bold text-gray-900">
-                            {card.title}
-                        </h1>
-                        <p className="leading-relaxed">
+                        <p className='text-[20px] mb-4'>
+                            About me
+                        </p>
+                        <p className="leading-[44px] xl:text-[32px] lg:text-[25px] text-[22px] text-black font-bold">
                             {card.textOne}
                         </p>
-                        <span className='my-8 font-semibold bg-secondary px-2 text-black'>
+                        <span className='my-5 font-semibold bg-primary p-2 px-4 text-black'>
                             {card.quote}
                         </span>
-                        <p className="mb-8 leading-relaxed">
+                        <p className="mb-8 leading-[44px] xl:text-[32px] lg:text-[25px] text-[22px] text-black font-bold">
                             {card.textTwo}
                         </p>
-                        <div className="flex justify-center">
-                            <Link href="/About">
-                                <button className="inline-flex items-center capitalize bg-primary text-white border-0 py-3 px-10 focus:outline-none  hover:bg-secondary rounded-lg text-lg duration-300 mt-4 md:mt-0 shadow-lg">
-                                    get to know me
-                                </button>
-                            </Link>
-                       </div>
+                    </motion.div>
+                    <div
+                        className="flex flex-1 items-center justify-center "
+                    >
+                        <Image className="object-cover " alt="hero" width={500} height={500} src={urlFor(card.mainImage).url()} />
                     </div>
                 </div>
             ))

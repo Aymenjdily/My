@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className=''>
         <Head>
           <title>
             AymenJdily
@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         {
           children
         }
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }

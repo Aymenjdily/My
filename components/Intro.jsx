@@ -1,32 +1,73 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react'
+import React,{ useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import { Switch } from '@headlessui/react'
+import { motion } from 'framer-motion'
+import { Socials } from '../constants'
+import { container, item } from '../utils/motion'
 
 const Intro = () => {
-  return (
-    <section className="flex items-center justify-center">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center relative">
-            {/* <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'/> */}
-            <div className='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient'/>
-            <div className='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient rounded-full'/>
-            <div 
-                className="lg:flex-grow md:px-24 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left py-6 mb-16 md:mb-0 items-start z-[2] overflow-hidden"
-            >
-                <h1 className='text-xl mb-1 font-bold'>
-                    Aymen
-                </h1>
-                <span className='mb-5 text-gray-400 font-semibold'>
-                    Full Stack Web Developer
-                </span>
-                <p className='md:text-5xl text-4xl font-bold'>
-                    Hey There ! I'm a Full Stack Web Developer Passionate
-                    About Creating High-Performance
-                    Projects.
-                </p>
+    const [enabled, setEnabled] = useState(false)
+
+    return (
+        <section className="container mx-auto sm:py-24 py-12 md:px-16 px-8">
+            <div className='flex md:flex-row flex-col gap-[60px]'>
+                <motion.div initial={{ opacity: 0, scale: 0.8}} animate={{ opacity:1, scale: 1}} transition={{ duration: 0.5 }}>
+                    <p className='text-[20px] text-gray-500'>
+                        Hello people!
+                    </p>
+                    <h1 className='xl:text-[124px] lg:text-[100px] md:text-[80px] text-[50px] font-bold'>
+                        I'am a full stack<br className='xl:flex hidden'/>{" "}
+                        web  developer.
+                    </h1>
+                </motion.div>
+                <div className=''>
+                    <div className='relative flex items-center justify-center animate-bounce w-[125px] h-[125px]'>
+                        <Image
+                            src="/scroll.svg"
+                            alt="scroll"
+                            fill
+                        />
+                        <Switch
+                            checked={enabled}
+                            onChange={setEnabled}
+                            className={`${
+                                enabled ? 'bg-gray-500' : 'bg-black'
+                            } absolute inline-flex h-6 w-11 rotate-90 items-center rounded-full`}
+                            >
+                            <span className="sr-only">Enable notifications</span>
+                            <span
+                                className={`${
+                                enabled ? 'translate-x-6' : 'translate-x-1'
+                                } inline-block h-4 w-4 transform rounded-full bg-primary transition`}
+                            />
+                        </Switch>
+                    </div>
+                </div>
             </div>
-        </div>    
-    </section>
-  )
+            <motion.div variants={container} whileInView="visible" initial="hidden" className='my-28 flex gap-[12px] items-center justify-center'>
+                {
+                    Socials.map((social) => (
+                        <motion.div
+                            variants={item}
+                            key={social.alt}
+                            className='border border-gray-300 p-3 rounded-full'
+                        >
+                            <Link href={social.link}>
+                                <Image 
+                                    src={social.image}
+                                    alt={social.alt}
+                                    width={20}
+                                    height={20}
+                                />
+                            </Link>
+                        </motion.div>
+                    ))
+                }
+            </motion.div>
+        </section>
+    )
 }
 
 export default Intro
