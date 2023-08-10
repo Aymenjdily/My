@@ -19,5 +19,5 @@ export {
     Footer,
     Profile,
     Career,
-    Blog
+    Blog,
 }

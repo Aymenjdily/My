@@ -5,10 +5,10 @@ import { motion } from 'framer-motion'
 
 const GetToKnow = ({data}) => {
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto overflow-hidden">
         {
             data.map((card, index) => (
-                <div className="flex px-5 lg:flex-row flex-col lg:gap-[100px] items-center" key={index}>
+                <div className="flex md:px-10 px-8 lg:flex-row flex-col lg:gap-[100px] md:items-center items-start" key={index}>
                     <motion.div
                         initial={{ opacity:0, scale:0.8 }}
                         whileInView={{ opacity:1, scale: 1 }}
@@ -29,7 +29,7 @@ const GetToKnow = ({data}) => {
                         </p>
                     </motion.div>
                     <div
-                        className="flex flex-1 items-center justify-center "
+                        className="flex flex-1 items-start md:justify-end justify-start "
                     >
                         <Image className="object-cover " alt="hero" width={500} height={500} src={urlFor(card.mainImage).url()} />
                     </div>

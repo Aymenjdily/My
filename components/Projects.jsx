@@ -2,6 +2,8 @@ import React from 'react'
 import ProjectCard from './ProjectCard'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import { motion } from 'framer-motion';
+import { container, item } from '../utils/motion';
 
 const Projects = ({data}) => {
   return (
@@ -32,7 +34,7 @@ const Projects = ({data}) => {
           </SplideSlide>
         </Splide>
       </div>
-      <div className='flex flex-col gap-20'>    
+      <div className='grid md:grid-cols-2 gap-20'>    
         {
           data.map((project, index) => (
             <ProjectCard key={index} index={index} data={project} />

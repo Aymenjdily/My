@@ -8,8 +8,7 @@ import { CgMenuRightAlt } from 'react-icons/cg'
 
 const Header = () => {
   return (
-    <header className="py-6 container overflow-hidden mx-auto md:px-0 px-8">
-
+    <header className="py-6 container overflow-hidden mx-auto sm:px-10 px-5">
         <motion.div initial={{ opacity:0, y:-100 }} transition={{ duration: 1 }} animate={{ opacity:1, y:0 }} className='flex justify-between items-center'>
             <Link href="/" className='flex items-center gap-[10px]'>
                 <h1 className='font-extrabold uppercase text-[35px]'>
@@ -64,8 +63,6 @@ const Header = () => {
                     </Menu>
                 </div>
         </motion.div>
-
-
     </header>
   )
 }

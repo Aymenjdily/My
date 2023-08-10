@@ -38,3 +38,18 @@ export const Socials = [
         alt: "github"
     },
 ]
+
+export const services = [
+    {
+        title: "Web Development",
+        description: "Web development merges design and technology to create interactive online experiences."
+    },
+    {
+        title: "User Experience",
+        description: "User experience shapes satisfaction through seamless interactions."
+    },
+    {
+        title: "High-performance",
+        description: "High-performance projects achieve outstanding results through optimized methods and advanced techniques."
+    },
+]

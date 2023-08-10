@@ -12,7 +12,7 @@ const Intro = () => {
 
     return (
         <section className="container mx-auto sm:py-24 py-12 md:px-16 px-8">
-            <div className='flex md:flex-row flex-col gap-[60px]'>
+            <div className='flex md:flex-row items-start justify-center flex-col md:gap-[20px] gap-[60px]'>
                 <motion.div initial={{ opacity: 0, scale: 0.8}} animate={{ opacity:1, scale: 1}} transition={{ duration: 0.5 }}>
                     <p className='text-[20px] text-gray-500'>
                         Hello people!
@@ -52,7 +52,7 @@ const Intro = () => {
                         <motion.div
                             variants={item}
                             key={social.alt}
-                            className='border border-gray-300 p-3 rounded-full'
+                            className='border border-gray-300 p-3 rounded-full hover:bg-primary duration-200'
                         >
                             <Link href={social.link}>
                                 <Image 

@@ -3,15 +3,14 @@ import { sanityClient } from '../sanity'
 
 
 export default function Home({projects, getKnow, clients, socials}) {
-  console.log(projects)
   return (
     <div className=''>
       <Intro />
       <GetToKnow data={getKnow} />
       <Projects data={projects} />
       {/* <Blog /> */}
-      {/* <Feedback data={clients} />
-      <Contact data={socials} /> */}
+      <Feedback data={clients} />
+      {/* <Contact data={socials} /> */}
     </div>
   )
 }
