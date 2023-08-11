@@ -1,45 +1,69 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { Socials } from '../constants'
+import Image from 'next/image'
+import { container, item } from '../utils/motion'
 // import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
-  const date = new Date()
-  let year = date.getFullYear()
 
   return (
-    <footer className=" py-5">
-        <div className=" px-5 py-8 flex items-center sm:flex-row flex-col">
-            <motion.span
-                initial={{
-                    opacity:0
-                }}
-                whileInView={{
-                    opacity:1
-                }}
-                transition={{
-                    duration:1
-                }} 
-                className="flex order-first text-center lg:order-none lg:w-1/5 title-font font-extrabold uppercase text-3xl items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
-            >
-                <Link href="/">
-                    aymen
-                </Link>
-            </motion.span>
-            <p className="text-sm md:text-start text-center text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-400 sm:py-2 sm:mt-0 mt-4">&copy; {year} All rights reserved —
-            <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@aymenjdily | Version 1.5</a>
-            </p>
-            <div className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                <span className="mr-5 capitalize font-semibold text-lg hover:text-secondary duration-200">
-                    <Link href="https://www.linkedin.com/in/aymenjdily/">
-                        Linkedin  
-                    </Link>
+    <footer className='container mx-auto px-10 py-6 '>
+        <div className='flex flex-col items-start pb-5'>
+            <Link href="/" className='flex items-center gap-[10px] mb-[30px]'>
+                <h1 className='font-extrabold uppercase text-[35px]'>
+                    aj
+                </h1>
+                <span className='text-[12px] text-gray-500'>
+                    Aymen
+                    <br/>
+                    Jdily
                 </span>
-                <span className="mr-5 capitalize font-semibold text-lg hover:text-primary duration-200">
-                    <Link href="https://www.instagram.com/aymen_jdily/">
-                        Instagram   
-                    </Link>
-                </span>
+            </Link>
+            <div className='py-[60px] flex justify-between w-full md:flex-row flex-col gap-[30px] border-y '>
+                <div className='flex-1 flex flex-col gap-[30px]'>
+                    <p className='text-gray-400 text-[23px] font-[500]'>
+                        Passionate web developer transforming
+                        ideas into captivating digital experiences
+                        with creativity and functionality. Committed
+                        to delivering high-quality solutions through
+                        innovation.
+                    </p>
+                    <motion.div variants={container} whileInView="visible" initial="hidden" className='flex gap-[12px] items-center'>
+                        {
+                            Socials.map((social) => (
+                                <motion.div
+                                    variants={item}
+                                    key={social.alt}
+                                    className='border border-gray-300 p-3 rounded-full hover:bg-primary duration-200'
+                                >
+                                    <Link href={social.link}>
+                                        <Image 
+                                            src={social.image}
+                                            alt={social.alt}
+                                            width={20}
+                                            height={20}
+                                        />
+                                    </Link>
+                                </motion.div>
+                            ))
+                        }
+                    </motion.div>
+                </div>
+                <div className='flex-1 flex flex-col gap-[22px] justify-center md:items-end md:text-left'>
+                    <span className='text-gray-400 text-[20px] font-[500]'>
+                        Casablanca, Morocco
+                    </span>
+                    <span className='text-gray-400 text-[20px] font-[500]'>
+                        aymenjdily@gmail.com
+                    </span>
+                    <span className='text-gray-400 text-[20px] font-[500]'>
+                        +212 710305404
+                        <br />
+                        +380 95 825 9084
+                    </span>
+                </div>
             </div>
         </div>
     </footer>

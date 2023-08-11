@@ -53,3 +53,18 @@ export const services = [
         description: "High-performance projects achieve outstanding results through optimized methods and advanced techniques."
     },
 ]
+
+export const sponsors = [
+    {
+        alt: "nokturn",
+        image: "/nokturn.jpeg"
+    },
+    {
+        alt: "sgmg",
+        image: "/sgmg.jpeg"
+    },
+    {
+        alt: "korair",
+        image: "/korair.jpeg"
+    },
+]
