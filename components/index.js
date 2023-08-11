@@ -5,9 +5,6 @@ import GetToKnow from "./GetToKnow";
 import Feedback from "./Feedback";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import Profile from "./Profile";
-import Career from "./Career";
-import Blog from "./Blog";
 
 export {
     Header,
@@ -17,7 +14,4 @@ export {
     Feedback,
     Contact,
     Footer,
-    Profile,
-    Career,
-    Blog,
 }

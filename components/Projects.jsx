@@ -7,7 +7,7 @@ import { container, item } from '../utils/motion';
 
 const Projects = ({data}) => {
   return (
-    <div className='overflow-hidden px-8 pb-12 md:py-24' id='projects'>
+    <div className='overflow-hidden px-8 pb-12 md:py-24' id='work'>
       <div className='py-[100px]'>
         <Splide
           options={{

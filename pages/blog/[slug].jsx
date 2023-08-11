@@ -8,7 +8,7 @@ import Image from 'next/image'
 const BlogDetails = ({ blog }) => {
   console.log(blog)
   return (
-    <section className='container mx-auto py-16 px-4'>
+    <section className='container mx-auto py-16 px-4 mb-10'>
       <div className='w-full h-64 relative'>
         <Image
           src={urlFor(blog.mainImage).url()}

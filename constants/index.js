@@ -4,7 +4,7 @@ export const navLinks = [
         title: "home"
     },
     {
-        link: "/About",
+        link: "/#about",
         title: "about"
     },
     {
@@ -23,17 +23,17 @@ export const navLinks = [
 
 export const Socials = [
     {
-        link: "/",
+        link: "https://www.instagram.com/aymen_jdily/",
         image: "/instagram.svg",
         alt: "title"
     },
     {
-        link: "/",
+        link: "https://www.linkedin.com/in/aymenjdily/",
         image: "/linkedin.svg",
         alt: "linkedin"
     },
     {
-        link: "/",
+        link: "https://github.com/Aymenjdily",
         image: "/github.svg",
         alt: "github"
     },

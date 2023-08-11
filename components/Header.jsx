@@ -43,8 +43,8 @@ const Header = () => {
 
                 <div className='md:hidden flex'>
                     <Menu >
-                        <Menu.Button >
-                            <CgMenuRightAlt className='text-3xl' onClick={() => setToggle(true)} />
+                        <Menu.Button onClick={() => setToggle(true)}>
+                            <CgMenuRightAlt className='text-4xl'  />
                         </Menu.Button>
                         {
                             toggle && (

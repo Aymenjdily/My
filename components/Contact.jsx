@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Contact = () => {
   return (
-    <section className='container mx-auto py-[100px] px-10'>
+    <section className='container mx-auto py-[100px] px-10' id="contact">
         <div className='flex flex-col items-center justify-center gap-[30px]'>
             <h3 className='text-gray-500 text-[20px] font-[400]'>
                 you are interested ?

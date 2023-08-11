@@ -15,7 +15,7 @@ const Intro = () => {
             <div className='flex md:flex-row items-start justify-center flex-col md:gap-[20px] gap-[60px]'>
                 <motion.div initial={{ opacity: 0, scale: 0.8}} animate={{ opacity:1, scale: 1}} transition={{ duration: 0.5 }}>
                     <p className='text-[20px] text-gray-500'>
-                        Hello people!
+                        Hey you!
                     </p>
                     <h1 className='xl:text-[124px] lg:text-[100px] md:text-[80px] text-[50px] font-bold'>
                         I'am a full stack<br className='xl:flex hidden'/>{" "}
