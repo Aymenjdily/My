@@ -7,7 +7,7 @@ const ProjectCard = ({data : {slug, mainImage, projectName, url}, index}) => {
   return (
     <Link href={`${url ? url : "#"}`}>
       <div
-        className={`relative h-[50vh] w-full shadow-lg cursor-pointer`}
+        className={`relative h-[50vh] w-full duration-200 hover:opacity-80 shadow-lg cursor-pointer`}
       >
           <Image src={urlFor(mainImage).url()} fill alt="project-Image" className='object-cover' />
           <div className={`absolute w-full h-full bg-black/50`}>
