@@ -60,8 +60,8 @@ export const sponsors = [
         image: "/nokturn.jpeg"
     },
     {
-        alt: "sgmg",
-        image: "/sgmg.jpeg"
+        alt: "amc",
+        image: "/amc.png"
     },
     {
         alt: "korair",

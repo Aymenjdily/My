@@ -35,16 +35,16 @@ const Feedback = () => {
                   <Image
                     alt="shape"
                     src="/rectangle.svg"
-                    width={250}
-                    height={250}
+                    width={200}
+                    height={200}
                     className=''
                   />
-                    <div className='z-10 absolute top-0 '>
+                    <div className='z-10 flex items-center justify-center w-full h-full absolute top-0 '>
                     <Image
                       alt={sponsor.alt}
                       src={sponsor.image}
-                      width={150}
-                      height={100}
+                      width={120}
+                      height={150}
                       className='object-contain rounded-xl'
                     />
                   </div>
