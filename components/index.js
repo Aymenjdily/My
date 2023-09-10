@@ -5,6 +5,7 @@ import GetToKnow from "./GetToKnow";
 import Feedback from "./Feedback";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Techs from "./Techs";
 
 export {
     Header,
@@ -14,4 +15,5 @@ export {
     Feedback,
     Contact,
     Footer,
+    Techs
 }

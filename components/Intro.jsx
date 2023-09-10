@@ -6,6 +6,7 @@ import { Switch } from '@headlessui/react'
 import { motion } from 'framer-motion'
 import { Socials } from '../constants'
 import { container, item } from '../utils/motion'
+import { BiSolidHandDown } from 'react-icons/bi'
 
 const Intro = () => {
     const [enabled, setEnabled] = useState(false)
@@ -29,7 +30,8 @@ const Intro = () => {
                             alt="scroll"
                             fill
                         />
-                        <Switch
+                        <BiSolidHandDown className='p-3  rounded-full text-5xl bg-primary' />
+                        {/* <Switch
                             checked={enabled}
                             onChange={setEnabled}
                             className={`${
@@ -42,7 +44,7 @@ const Intro = () => {
                                 enabled ? 'translate-x-6' : 'translate-x-1'
                                 } inline-block h-4 w-4 transform rounded-full bg-primary transition`}
                             />
-                        </Switch>
+                        </Switch> */}
                     </div>
                 </div>
             </div>
