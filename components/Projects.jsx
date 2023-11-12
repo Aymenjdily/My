@@ -7,7 +7,7 @@ import { container, item } from '../utils/motion';
 
 const Projects = ({data}) => {
   return (
-    <div className='overflow-hidden px-8 pb-12 md:py-24' id='work'>
+    <div className='overflow-hidden container mx-auto px-8 pb-12 md:py-24' id='work'>
       <div className='py-[100px]'>
         <Splide
           options={{
@@ -23,18 +23,18 @@ const Projects = ({data}) => {
             gap:"50px"
           }}
         >
-          <SplideSlide className='lg:text-[124px] md:text-[70px] text-[50px] text-black lg:leading-[170px] font-bold'>
+          <SplideSlide className='lg:text-[124px] md:text-[70px] text-[50px] text-black lg:leading-[170px] font-lilita'>
             Featured Work
           </SplideSlide>
-          <SplideSlide className='lg:text-[124px] md:text-[70px] text-[50px] text-black lg:leading-[170px] font-bold'>
+          <SplideSlide className='lg:text-[124px] md:text-[70px] text-[50px] text-black lg:leading-[170px] font-lilita'>
             Featured Work
           </SplideSlide>
-          <SplideSlide className='lg:text-[124px] md:text-[70px] text-[50px] text-black lg:leading-[170px] font-bold'>
+          <SplideSlide className='lg:text-[124px] md:text-[70px] text-[50px] text-black lg:leading-[170px] font-lilita'>
             Featured Work
           </SplideSlide>
         </Splide>
       </div>
-      <div className='grid md:grid-cols-2 gap-20'>    
+      <div className='grid md:grid-cols-2 gap-20 '>    
         {
           data.map((project, index) => (
             <ProjectCard key={index} index={index} data={project} />

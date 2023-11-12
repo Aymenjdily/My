@@ -12,14 +12,9 @@ const Footer = () => {
     <footer className='container mx-auto px-10 py-6 '>
         <div className='flex flex-col items-start pb-5'>
             <Link href="/" className='flex items-center gap-[10px] mb-[30px]'>
-                <h1 className='font-extrabold uppercase text-[35px]'>
-                    aj
+                <h1 className='text-[35px] font-lilita'>
+                    Code with Aymen
                 </h1>
-                <span className='text-[12px] text-gray-500'>
-                    Aymen
-                    <br/>
-                    Jdily
-                </span>
             </Link>
             <div className='py-[60px] flex justify-between w-full md:flex-row flex-col gap-[30px] border-y '>
                 <div className='flex-1 flex flex-col gap-[30px]'>

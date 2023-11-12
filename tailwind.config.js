@@ -19,7 +19,7 @@ module.exports = {
         extraLightBlue : '#b3cde0',
       },
       fontFamily: {
-        Signika: ["Signika", "sans-serif"]
+        lilita: ["Lilita One", "sans-serif"]
       },
     },
   },

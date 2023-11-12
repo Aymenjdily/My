@@ -7,7 +7,7 @@ import Image from 'next/image'
 const Feedback = () => {
   return (
     <section className='container mx-auto py-12 px-10 overflow-hidden'>
-        <motion.h1 initial={{ opacity:0, scale:0.8 }} whileInView={{ opacity:1, scale:1 }} transition={{ duration:0.5 }} className='lg:text-[124px] md:text-[100px] text-[50px] font-bold'>
+        <motion.h1 initial={{ opacity:0, scale:0.8 }} whileInView={{ opacity:1, scale:1 }} transition={{ duration:0.5 }} className='lg:text-[124px] md:text-[100px] text-[50px] font-lilita'>
             My Focus
         </motion.h1>
         <motion.div initial="hidden" variants={container} whileInView="visible" className='mt-[84px] flex flex-col gap-[70px] lg:px-16 md:px-0 px-5 md:mb-[140px] mb-[80px]'>
@@ -25,7 +25,7 @@ const Feedback = () => {
           }
         </motion.div>
         <div className=' flex flex-col justify-between items-center'>
-          <h1 className='mb-[70px] text-2xl font-bold'>
+          <h1 className='mb-[70px] text-2xl font-lilita'>
             Trusted by
           </h1>
           <motion.div variants={container} initial="hidden" whileInView="visible" className='flex items-center justify-center flex-wrap gap-[80px]'>
