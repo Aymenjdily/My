@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <div className=''>
         <Head>
           <title>
-            AymenJdily
+            Adam
           </title>
         </Head>
         <Header />
