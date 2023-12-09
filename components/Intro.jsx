@@ -19,8 +19,8 @@ const Intro = () => {
                         Hey there!
                     </p>
                     <h1 className='xl:text-[124px] font-lilita lg:text-[100px] md:text-[80px] text-[50px] '>
-                        I'am a Tech<br className='xl:flex hidden'/>{" "}
-                        Geek.
+                        I'am a Web<br className='xl:flex hidden'/>{" "}
+                        Developer.
                     </h1>
                 </motion.div>
                 <div className=''>

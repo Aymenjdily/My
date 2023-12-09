@@ -13,9 +13,7 @@ const Header = () => {
         <header className="py-6 container overflow-hidden mx-auto sm:px-10 px-5">
             <motion.div initial={{ opacity:0, y:-100 }} transition={{ duration: 1 }} animate={{ opacity:1, y:0 }} className='flex justify-between items-center'>
                 <Link href="/" className='flex items-center gap-[10px]'>
-                    <h1 className='text-[35px] font-lilita'>
-                        Code with Aymen
-                    </h1>
+                    <Image src="/logo.png" alt="logo" width={150} height={0} />
                 </Link>
 
                 {/* Desktop */}

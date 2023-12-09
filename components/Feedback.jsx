@@ -24,7 +24,7 @@ const Feedback = () => {
             ))
           }
         </motion.div>
-        <div className=' flex flex-col justify-between items-center'>
+        {/* <div className=' flex flex-col justify-between items-center'>
           <h1 className='mb-[70px] text-2xl font-lilita'>
             Trusted by
           </h1>
@@ -52,7 +52,7 @@ const Feedback = () => {
               ))
             }
           </motion.div>
-        </div>
+        </div> */}
     </section>
   )
 }

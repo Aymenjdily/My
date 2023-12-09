@@ -11,10 +11,10 @@ export const navLinks = [
         link: "/#work",
         title: "work"
     },
-    {
-        link: "/Blog",
-        title: "blog"
-    },
+    // {
+    //     link: "/Blog",
+    //     title: "blog"
+    // },
     {
         link: "/#contact",
         title: "contact"
@@ -23,17 +23,17 @@ export const navLinks = [
 
 export const Socials = [
     {
-        link: "https://www.instagram.com/aymen_jdily/",
+        link: "",
         image: "/instagram.svg",
         alt: "title"
     },
     {
-        link: "https://www.linkedin.com/in/aymenjdily/",
+        link: "",
         image: "/linkedin.svg",
         alt: "linkedin"
     },
     {
-        link: "https://github.com/Aymenjdily",
+        link: "",
         image: "/github.svg",
         alt: "github"
     },
